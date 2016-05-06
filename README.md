@@ -4,9 +4,9 @@ To run: "python learning.py"
 
 Steps:
 
-1: run code in terminal
+1: run "learning.py" in terminal
 
-2: paste code 
+2: paste code you want to practice
 
 3: when all code has been pasted type "EOF"
 
