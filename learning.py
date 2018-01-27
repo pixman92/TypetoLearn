@@ -21,7 +21,9 @@ while True:
 		break
 	if rawCode is None:
 		rawCode = raw_input()
-	savedCode.append(rawCode)
+	savedCode.append(rawCode.strip())
+
+
 
 print("line?")
 #prints Line? asks for line to skip to
@@ -78,7 +80,7 @@ while True:
 		# print(x, i)
 
 	# print(i)
-	if x==savedCode[i]:
+	if x==savedCode[i].strip():
 		print ("\nCorrect!")
 		i=i+1
 	elif skip == False:
@@ -93,8 +95,15 @@ while True:
 # 		 #print savedCode[i]
 # 		# i+=1
 # 		break
-	if savedCode[i] == "":
-		print "All done! Good job!"
+
+	if i >= len(savedCode):
+		print "Done!"
 		break
+
+
+	# Used previosly to end printing job, not effective wih code that has blanks
+	# if savedCode[i] == "":
+	# 	print "All done! Good job!"
+	# 	break
 
 																		 
